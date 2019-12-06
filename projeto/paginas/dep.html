@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="stylesheet" href="../css/bootstrap.min.css">
+
+<script src="../js/jquery-3.4.1.min.js"></script>
+<script src="../js/popper.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+
+<script>
+	$(document).ready(function(){
+		$(".btne").click(function(){
+			$("h3").hide("fast");
+		});
+	});
+	$(document).ready(function(){
+		$(".btno").click(function(){
+			$("h3").show("slow");
+		});
+	});
+</script>
+<meta charset="UTF-8">
+<title>Faça sua transferência</title>
+</head>
+<body style="background: yellow">
+
+	<nav class="navbar navbar-expand-lg navbar-light btn btn-primary">
+		<a class="btn btn-warning" href="../../index.html">Banco Do Brasil</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse"
+			data-target="#navbarSupportedContent"
+			aria-controls="navbarSupportedContent" aria-expanded="false"
+			aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item active"><a class="nav-link"
+					href="formulario.html">Sua conta <span class="sr-only">(current)</span>
+				</a></li>
+				<li class="nav-item"><a class="nav-link" href="dep.html">Transferência</a></li>
+				<li class="nav-item dropdown"><a
+					class="nav-link dropdown-toggle" href="#" id="navbarDropdown"
+					role="button" data-toggle="dropdown" aria-haspopup="true"
+					aria-expanded="false"> Extrato </a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item" href="ExMensal.html">Extrato mensal</a> <a
+							class="dropdown-item" href="ExAnual.html">Extrato Anual</a>
+					</div></li>
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+				<input class="form-control mr-sm-2" type="search"
+					placeholder="digite algo..." aria-label="Search">
+				<button class="btn btn-dark" type="submit">Buscar</button>
+			</form>
+		</div>
+	</nav>
+	<div class="container">
+		<br />
+		<div class="row">
+			<div class="col 4">
+				<h3>
+					Transferências recebidas<span class="badge badge-secondary">3</span>
+				</h3>
+			</div>
+			<div class="col 4">
+				<h3>
+					Transferências realizadas<span class="badge badge-secondary">9</span>
+				</h3>
+			</div>
+		</div>
+		<br>
+		<div class="txtmostrar">
+			<h3>Pagamento P2P, ou Pagamento Pessoa-Para-Pessoa (do inglês,
+				Person-to-Person) é um sistema online que permite aos consumidores
+				transferirem fundos de seus cartões de crédito ou banco para outro
+				usuário a partir de um smartphone ou via internet, porém o
+				envolvimento direto da entidade banco intermediando a transação.</h3>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-6">
+				<button class="btn btn-primary btne" type="submit">Ocultar</button>
+			</div>
+			<div class="col-6">
+				<button class="btn btn-primary btno" type="submit">Exibir</button>
+			</div>
+		</div>
+		<div class="col 4">
+			<br>
+			<div class="alert alert-primary" role="alert">
+				Para ver quanto você possui na conta <a href="formulario.html"
+					class="alert-link">clique aqui</a>.
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
